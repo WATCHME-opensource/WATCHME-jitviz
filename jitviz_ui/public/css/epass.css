@@ -1,0 +1,120 @@
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+.wrapper .jitviz-container {
+    width: 100%;
+    display: table;
+    padding: 0.5em;
+    border: 2px solid orange;
+}
+.wrapper .jit-component {
+    width: 100%;
+}
+.wrapper .jit-component .epa {
+    display: table;
+    border-bottom: 1px solid orange;
+}
+.jit-component .epa:last-of-type {
+    border: none;
+}
+.jit-component .epa .feedback-message {
+    width: 100%;
+    float: left;
+}
+.jit-component .epa .alerts {
+    width: 100%;
+    float: left;
+}
+.jit-component .epa .alerts-message {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+.jit-component .epa .student-name {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+.jit-component .epa .student-alert {
+    display: block;
+    margin-bottom: 0.3em;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0.3em;
+}
+.jit-component .epa .student-alert:last-of-type {
+    margin-bottom: 0em;
+}
+.jit-component .epa .jit-open-portfolio {
+    margin-bottom: 1em;
+}
+.wrapper .jit-component .button {
+    width: 8.5rem;
+    float: right;
+    margin-top: 0.4em;
+    text-align: left;
+    word-wrap: break-word;
+    font-weight: bold;
+    background-color: orange;
+}
+.wrapper .jit-component .show-all-container {
+    text-align: center;
+}
+.wrapper .jit-component .show-all-container #show-all {
+    float: none;
+    text-align: center;
+}
+.wrapper .jit-dashboard-example {
+    width: 30%;
+    float: right;
+}
+.wrapper .jit-dashboard-example .dashboard-header {
+    margin: 0;
+}
+.wrapper .jit-assessment-example {
+    width: 65%;
+    float: left;
+}
+.wrapper .jit-assessment-example #context {
+    padding: 0.5em 0 0.5em 0.5em;
+}
+.wrapper .jit-assessment-example .assessment-header-block {
+    width: 28%;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: bold;
+}
+.wrapper .jit-assessment-example .jit-component,
+.wrapper .jit-assessment-example #assessment-context-dropdown {
+    width: 68%;
+    float: right;
+}
+.wrapper .jit-assessment-example .jit-component .epa,
+.wrapper .jit-assessment-example #assessment-context-dropdown .epa {
+    padding-top: 1em;
+}
+.wrapper .jit-assessment-example .jit-component .epa:first-of-type,
+.wrapper .jit-assessment-example #assessment-context-dropdown .epa:first-of-type {
+    padding-top: 0;
+}
+.wrapper .jit-assessment-example .jit-component .epa .epa-name,
+.wrapper .jit-assessment-example #assessment-context-dropdown .epa .epa-name {
+    display: block;
+    margin-bottom: 0.8em;
+    font-weight: bold;
+}
+.wrapper .jit-assessment-example .jit-component .epa .epa-date,
+.wrapper .jit-assessment-example #assessment-context-dropdown .epa .epa-date {
+    color: grey;
+}
+.wrapper .jit-assessment-example .jit-component .feedback-type,
+.wrapper .jit-assessment-example #assessment-context-dropdown .feedback-type {
+    margin-top: 0.2em;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.wrapper .jit-assessment-example .feedback-level-1 {
+    font-weight: bold;
+}
+/*# sourceMappingURL=epass.css.map */

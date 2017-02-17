@@ -1,0 +1,41 @@
+{
+  "name": "jitvizui",
+  "version": "0.0.1",
+  "main": "server.js",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "express": "^4.13.0",
+    "express-cors": "0.0.3",
+    "morgan": "^1.6.0",
+    "request": "~2.58.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^3.8.0",
+    "grunt-concurrent": "^2.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-karma": "^2.0.0",
+    "grunt-nodemon": "^0.4.0",
+    "grunt-sass": "^1.0.0",
+    "grunt-shell": "^1.1.2",
+    "jasmine": "^2.4.1",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-bro": "^0.11.1",
+    "karma-jasmine": "^1.0.2",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-spec-reporter": "0.0.26",
+    "phantomjs-prebuilt": "^2.1.7",
+    "underscore": "^1.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WATCHME-opensource/watchme-jitviz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WATCHME-opensource/watchme-jitviz/issues"
+  },
+  "homepage": "https://github.com/WATCHME-opensource/watchme-jitviz#readme"
+}

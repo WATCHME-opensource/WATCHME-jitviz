@@ -1,0 +1,152 @@
+﻿.wrapper {
+    max-width: 1200px;
+    margin: auto;
+
+
+    .jitviz-container {
+        width: 100%;
+        display: table;
+        padding: 0.5em;
+        border: 2px solid orange;
+    }
+    //Common Styles
+    .jit-component {
+        width: 100%;
+
+        .epa {
+            display: table;
+            border-bottom: 1px solid orange;
+
+            &:last-of-type {
+                border: none;
+            }
+
+            .feedback-message {
+                width: 100%;
+                float: left;
+            }            
+        }
+		
+		.button {
+                width: 8.5rem;
+                float: right;
+                margin-top: 0.4em;
+                text-align: left;
+                word-wrap: break-word;
+                font-weight: bold;
+                background-color: orange;
+            }
+			
+		.show-all-container{
+			text-align:center;
+			
+			#show-all{
+				float:none;
+			  text-align:center;
+			}
+		}
+    }
+    //Dashboard Styles
+    .jit-dashboard-example {
+        width: 30%;
+        float: right;
+
+        .dashboard-header {
+            margin: 0;
+        }
+
+        .error {
+            display: block;
+            margin-top: 0.5em;
+        }
+		
+		.epa-date {
+			margin-top:0.5em;
+			color:grey;
+		}
+
+        .jit-dashboard-level-1-content {
+            hr {
+                margin-bottom: 0;
+            }
+
+            .epa-name {
+                text-decoration: underline;
+            }				
+        }
+
+        .jit-dashboard-level-2-content {
+            .epa-name,
+            .feedback-level-1 {
+                font-weight: bold;
+            }
+
+            .feedback-type {
+                text-decoration: underline;
+            }
+        }
+
+        .back-button {
+            cursor: pointer;
+            display: block;
+            margin-bottom: 0.6em;
+            color: darkorange;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .epa {
+            padding: 1em 0;
+        }
+    }
+    //Assessment Styles
+    .jit-assessment-example {
+        width: 65%;
+        float: left;
+
+        #context {
+            padding: 0.5em 0 0.5em 0.5em;
+        }
+
+        .assessment-header-block {
+            width: 28%;
+            display: inline-block;
+            vertical-align: top;
+            font-weight: bold;
+        }
+
+        .jit-component,
+        #assessment-context-dropdown {
+            width: 68%;
+            float: right;
+
+            .epa {
+                padding-top: 1em;
+
+                &:first-of-type {
+                    padding-top: 0;
+                }
+
+                .epa-name {
+                    display: block;
+                    margin-bottom: 0.8em;
+                    font-weight: bold;
+                }
+				
+				.epa-date {
+					color:grey;
+				}
+            }
+
+            .feedback-type {
+                margin-top: 0.2em;
+                text-decoration: underline;
+                font-weight: bold;
+            }
+        }
+
+        .feedback-level-1 {
+            font-weight: bold;
+        }
+    }
+}

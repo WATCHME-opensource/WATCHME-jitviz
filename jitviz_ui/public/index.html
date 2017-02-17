@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+      <title>DUMMY EXAMPLE: EPASS Client</title>
+      <link href="css/epass.css" rel="stylesheet" />
+  </head>
+  <body class="wrapper">
+    <div class="jit-assessment-example">
+        <h2>ASSESSMENT EXAMPLE:</h2>
+        <!--Already exists in EPASS-->
+        <div id="context" class="assessment-header-block">Context</div>
+        <select id="assessment-context-dropdown" onchange="triggerUpdate()">
+            <option data-epa-ids="1">Task 1: Set learning goals for the whole curriculum and specific lessons</option>
+            <option data-epa-ids="2">Task 2: Design learning activities (incl. materials and methods) for the learning goals</option>
+            <option data-epa-ids="1,2">Simulation of Task 1 + 2 selected at the same time</option>
+            <option data-epa-ids="3">Task 3: Plan the execution and supervision of learning</option>
+            <option data-epa-ids="4">Task 4: Supervise the execution and supervision of learning activities</option>
+            <option data-epa-ids="5">Task 5: Test to which extent the set learning goals have been met</option>
+        </select>
+        <script>
+            function triggerUpdate() {
+                // Link canvases to your action by giving them a class (or an id for single component)
+                // EXAMPLE: Make two canvases show the same content depending on the above dropdownlist
+                // Get the selected index of the dropdown
+                // NOTE: Option no. 3 has '1,2' as epaId to illustrate selecting multiple epas and getting their feedback
+                var dropdownlist = document.querySelector('#assessment-context-dropdown');
+                var selectedEpaId = dropdownlist.options[dropdownlist.selectedIndex].dataset.epaIds;
+
+                // Get the elements you want to update
+                var jitComponents = document.querySelectorAll('.context-jit-feedback');
+
+                // Iterate through them in case there is more than one
+                for (var i = 0; i < jitComponents.length; i++) {
+                    // Set the attributes you want to change
+                    $(jitComponents[i]).data("epaIds", selectedEpaId);
+                }
+
+                //Call update and send in the jit components that should be updated
+                WATCHME.update(jitComponents);
+                //The canvas('s) will then update when they have received data
+            }
+        </script>
+        <!---->
+        <!--JIT Feedback components-->
+        <div class="jitviz-container">
+            <div class="assessment-header-block">Recent Personalised Feedback</div>
+            <div class="jit-component canvas context-jit-feedback" data-env="development"
+               data-jit-component-type="assessment"
+               data-epa-ids="1"
+               data-model-id="model-example"
+               data-student-id="xxx"
+               data-language="de"
+               data-session-token="xxx"
+               data-auth-token="xxx"
+               data-group-id="foo">
+            </div>
+
+            <!--Another canvas linked to the dropdownlist selected-->
+            <!--<div class="jit-component canvas context-jit-feedback"
+                 data-initiate="empty"
+                 data-jit-component-type="assessment"
+                 data-feedback-levels="1,2"
+                 data-model-id="teacher-training"
+                 data-group-id="cohortId"
+                 data-student-id="hashofstudentidstring"
+                 data-language="en"
+                 data-session-token="tokenfromepass"
+                 data-auth-token="hashofauthenticationstring">
+            </div>-->
+        </div>
+    </div>
+
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/watchme_bundle.js"></script>
+
+  </body>
+</html>

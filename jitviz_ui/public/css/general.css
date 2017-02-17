@@ -1,0 +1,88 @@
+.viz-component #epas, .viz-component th {
+    border: 1px solid black;
+    padding:10px;
+    background-color: white;
+    border-collapse:collapse;
+}
+
+.viz-component td {
+    padding:10px;
+}
+
+.viz-component .red-background {
+    background-color: rgba(255,0,0,0.2);
+}
+
+.viz-component .green-background {
+    background-color: rgba(0,255,0,0.2);
+}
+
+.viz-component .amber-background {
+    background-color: rgba(255,255,0,0.2);
+}
+
+.viz-component .align-center {
+    text-align:center;
+}
+
+.viz-component .general-data-column {
+    text-align: center;
+    border:1px solid black;
+}
+
+.viz-component .general-name-column {
+    font-weight: bold;
+    border:1px solid black;
+}
+
+.viz-component .border {
+    border:1px solid black;
+}
+
+.viz-component .competency {
+    display:none;
+}
+
+.viz-component .color-one {
+    color: #0072BC;
+}
+
+.viz-component .color-two {
+    color: #39B54A;
+}
+
+.viz-component .color-three {
+    color: #92278F;
+}
+
+.viz-component .color-four {
+    color: #9E0039;
+}
+
+.viz-component .color-five {
+    color: #D1AB14;
+}
+
+.viz-component .color-six {
+    color: #6600cc;
+}
+
+.viz-component .color-seven {
+    color: #996600;
+}
+
+.viz-component .color-eight {
+    color: #c936c5;
+}
+
+.viz-component .color-nine {
+    color: #4d3300;
+}
+
+.viz-component .color-ten {
+    color: #1ac6ff;
+}
+
+.jitviz-paragraph {
+    -webkit-margin-after:0em;
+}

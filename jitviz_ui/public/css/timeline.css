@@ -1,0 +1,150 @@
+/* HOVER STYLES */
+.viz-component div#pop-up {
+  display: none;
+  position: fixed;
+  width: 280px;
+  padding: 10px;
+  background: #eeeeee;
+  color: #000000;
+  border: 1px solid #1a1a1a;
+  font-size: 90%;
+  z-index:1;
+}
+
+#current ._expanded_ {
+    fill-opacity:1;
+}
+
+.viz-component a {
+    color: #363A3F;
+}
+
+.viz-component body { font-size: 80%; font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif; }
+.viz-component ul.tabs { list-style-type: none; margin: 30px 0 0 0; padding: 0 0 0.3em 0; }
+.viz-component ul.tabs li { display: inline; }
+.viz-component ul.tabs li a { color: #363A3F; background-color: white; border: none; padding: 0.3em; text-decoration: none; }
+.viz-component ul.tabs li a:hover { background-color: #f1f0ee; }
+.viz-component ul.tabs li a.selected { color: #363A3F; background-color: #f1f0ee; border: 1px solid #363A3F; border-bottom: none; padding: 0.7em 0.3em 0.38em 0.3em; }
+.viz-component div.tabContent { border: 1px solid #363A3F; padding: 0.5em; background-color: #f1f0ee; }
+.viz-component div.tabContent.hide { display: none; }
+
+.viz-component .legend span {
+    display: inline-block;
+    text-align: center;
+    color: black;
+    vertical-align:top;
+}
+
+.viz-component .clickable {
+    cursor: pointer;
+}
+
+.viz-component .icon-doc-text {
+  font-size: 28px;
+  line-height: 32px;
+}
+
+
+.viz-component .button-path {
+    cursor: pointer;
+    background: #8F7983;
+    color: white;
+    border: 2px solid #6F7983;
+    border-radius: 0;
+    padding: 5px 5px;
+    margin: 5px;
+}
+
+
+.viz-component .button {
+    cursor: pointer;
+    background: #6F7983;
+    color: white;
+    border: 2px solid #6F7983;
+    border-radius: 0;
+    padding: 5px 5px;
+    margin: 5px;
+}
+
+.viz-component .button-down {
+    cursor: pointer;
+    color: white;
+    background: #363A3F;
+    border: 2px solid #363A3F;
+    border-radius: 0;
+    padding: 5px 5px;
+    margin: 5px;
+}
+
+.viz-component .toggle {
+    cursor: pointer;
+    color: white;
+    padding: 5px 5px;
+    margin: 5px;
+    }
+
+
+.viz-component .navigateTop {
+    text-align: center;
+    padding: 5px 5px;
+    margin: 5px;
+}
+
+.viz-component .centered {
+  width: 500px ;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+
+.viz-component h1 {
+    text-align: center;
+    color: #363A3F;
+}
+
+.viz-component .login {
+    font-size: 15px;
+    padding: 50px 5px;
+    margin: 5px;
+}
+
+.viz-component .selections {
+    text-align: center;
+    padding: 5px 5px 10px;
+    margin: 5px;
+}
+
+.viz-component .loading {
+  padding: 20px;
+}
+
+.viz-component .loading img{
+    display: inline-block;
+    vertical-align:middle;
+}
+
+.viz-component .loading span{
+    text-align: center;
+    color: black;
+}
+
+.viz-component #usersContainer {
+    display: inline-block;
+    width:20%;
+    vertical-align:top;
+}
+
+.viz-component #tabsContainer {
+    display: inline-block;
+    width:75%;
+}
+
+.viz-component .error {
+    color: #DB1A25;
+    padding: 10px;
+    border: 1px #DB1A25 solid;
+    background-color: #FFDDDD;
+}
+
+.viz-component .clickable {
+    cursor: pointer;
+}
